@@ -38,7 +38,7 @@ jobs:
         run: pnpm install --frozen-lockfile --ignore-scripts --production
 
       - name: Build static files
-        run: pnpm run build
+        run: npm run build -- --base /<ppt>/
 
       - uses: actions/configure-pages@v4
 
